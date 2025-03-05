@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos ou apenas mude o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="Imagens/300x300.jpg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="Imagens/700x700.jpg" type="image/jpeg">
+        <img src="Imagens/1000x1000.jpg" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <hr>
+    <p>Aúdio do Trabaio:</p>
+        <audio src="midia/pq-nao-trabaia-toma-sua-gu.mp3" controls></audio>
+    <hr>
+    <p>Aúdio do Kiko:</p>
+    <audio src="midia/a-risada-do-kiko.mp3" controls></audio>
+    <source src="midia/a-risada-do-kiko.mp3" type="audio/mpeg">
+
+    <hr>
+    <p>Teste fiadaputa</p>
+    <audio controls>
+        <source src="midia/pq-nao-trabaia-toma-sua-gu.mp3" type="audio/mpeg">
+
+    </audio>
+
+
+    <h1>Vamos agora testar videos</h1>
+
+    <h2>Vídeos com hospedagem pŕopria</h2>
+    <video src="midia/13081197_1080_1920_30fps (cópia).mp4" controls width="400"></video>
+
+    <h2>Vídeo com hospedagem externa</h2>
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls width="400"></video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/caqTAeQX4R4?si=LxJ5dsBTy3H3-8KE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>    </p>
