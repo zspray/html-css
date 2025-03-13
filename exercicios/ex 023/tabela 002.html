@@ -11,15 +11,19 @@
         }
         table{
             border-collapse: collapse;
+            width: 500px;
         }
         td, th{
             border: 1px solid #000;
             padding: 8px;
             text-align: center;
         }
-        thead{
+        thead, tfoot{
             background-color: #949191;
-            color: antiquewhite;
+            color: white;
+        }
+        .num{
+            text-align: right;
         }
     </style>
 </head>
@@ -36,18 +40,120 @@
             -->
     <table>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>São Paulo</td>
-            <td>45.919.049</td>
-        </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.292.666</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.930.634</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.516.840</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.422.973</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.616.621</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.187.103</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.690.745</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.252.502</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.114.598</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.113.540</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.207.714</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.039.277</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.055.149</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.351.543</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.526.220</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.281.480</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.534.165</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.064.052</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.796.460</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.590.248</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">894.470</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">861.773</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">631.181</td>
+            </tr>
+
 
         </tbody>
         <tfoot>
-
+            <tr>
+                <th>Total de Habitantes</th>
+                <td>201.147.125</td>
+            </tr>
         </tfoot>
     </table>
 </body>
