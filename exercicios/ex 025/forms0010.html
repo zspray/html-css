@@ -9,10 +9,14 @@
     <h1>Exemplo de Formulário</h1>
     
     <form action="cadastro.php" method="get" autocomplete="on">
+
         <p>
-            <label for="inum">Número: </label>
-            <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
-            <output id="ival">5</output>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" value="2000" oninput="iidade.innerHTML = Number(2025)-Number(iano.value)">
+            <p>
+                <label for="iidade">Sua idade é: </label>
+                <output id="iidade">25</output>
+            </p>
         </p>
         <p>
             <input type="submit" value="Enviar">
