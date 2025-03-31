@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/* Estilo para a tela */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+menu ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #333;
+}
+menu li{
+   display: inline-block;
+   margin: 0px;
+   padding: 0px;
+}
+menu li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #754e4e;
+}
+
+menu li a:hover{
+    background-color: #333;
+    color: #fff;
+}
+main{
+    background-color: black;
+}
+article{
+    background-color: white;
+    width: 600px;
+    display: block;
+    margin: auto;
+    height: 100vh;
+}
