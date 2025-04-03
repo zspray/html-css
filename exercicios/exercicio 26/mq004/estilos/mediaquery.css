@@ -13,8 +13,31 @@ Large: 1400 px and up for large desktops and high-resolution screens
 
 
 @media print {
+    *{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-shadow: none;
+        color: black;
+    }
+    body{
+        background-image: url("../imagens/back-print.jpg");
+    }
+        img#phone{
+            display: none;
+        }
+        img#tablet{
+            display: none;
+        }
+        img#print{
+            display: block;
+        }
+        img#pc{
+            display: none;
+        }
+        img#tv{
+            display: none;
+        }
+    }
 
-}
 
 
 
