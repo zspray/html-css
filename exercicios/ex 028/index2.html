@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Grid layout</title>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 0;
+    }
+    header{
+        background-color: #105a8895;
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 5px;
+        margin-top: 0;
+    }
+    nav{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        justify-content: center;
+        background-color: #333;
+    }
+    nav a{
+        text-decoration: none;
+        color: white;
+        background-color: #333;
+        font-weight: bold;
+        padding: 10px
+    }
+    nav a:hover{
+        color: #009dff;
+        background-color: white;
+    }
+    .container {
+        display: grid;
+        grid-template-rows: repeat(auto, 100px);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 10px;
+        border: 2px solid #ccc;
+        margin: 0;
+        border: 0;
+    }   
+    .caixa1{
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-column-end: span 2;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        text-align: center;
+        font-size: 1em;
+        border: 2px solid #333;
+    }
+    .Categorias{
+        grid-row-start: 1;
+        grid-row-end:5;
+        grid-column-start: 1;
+        grid-column-end:2;
+        background-color: #ffffff;
+        text-align: center;
+        color: rgb(234, 0, 0);
+    }
+    .Categorias ul{
+        font-size: 1.2em;
+        padding: 20px;
+        list-style-type: none;
+    }
+    li{
+        padding: 10px;
+    }
+    .Categorias ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    .Categorias ul li a:hover{
+        color: #009dff;
+    }
+    .footer{
+        grid-column-start: 1;
+        grid-column-end:5;
+        background-color: #105a8895;
+        color: white;
+        padding: 20px
+
+    }
+    .Comentario{
+        grid-row-start: 1;
+        grid-row-end:2;
+        grid-column-start: 2;
+        grid-column-end:4;
+        font-size: 1.2em;
+        background-color: #009dff;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    .linhacomentario{
+        grid-row-start: 2;
+        grid-row-end:3;
+        grid-column-start: 2;
+        grid-column-end:4;
+        border-radius: 4px;
+        width: 100%;
+        height: 100px;
+    }
+    #footer{
+        background-color: #333;
+        margin: 0;
+    }
+    
+</style>
+<body>
+    <header>
+        <h1>Site de Grid</h1>
+        <nav>
+            <a href="">Menu 1</a>
+            <a href="">Menu 2</a>
+            <a href="">Menu 3</a>
+            <a href="">Menu 4</a>
+            <a href="">Menu 5</a>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="caixa1">
+            <h1>SUPER LOREM</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo consequuntur dolore provident eius sapiente officiis? Velit necessitatibus voluptatum reiciendis neque porro ea consequatur quisquam quibusdam, facere nemo quae quas Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae excepturi quas illum, quod odio eligendi aspernatur rerum numquam nemo officia, perferendis nam ex. At autem, eaque expedita obcaecati veritatis modi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nulla laboriosam officia, tenetur enim labore quibusdam commodi fuga, aliquid molestiae eos rem adipisci sapiente cupiditate sunt vitae a, similique unde. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse deserunt perferendis a obcaecati voluptatum sequ
+            i sapiente eos est impedit? Ipsum necessitatibus iure, itaque architecto sunt cumque rerum at rem atque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eaque fugit expedita ratione esse quas nemo, ipsam incidunt, quod totam quam, obcaecati ab veniam perferendis consequatur vero. Et, numquam maxime.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos molestiae nulla temporibus quia, mollitia alias asperiores assumenda quis quibusdam consequuntur sit nihil tempore pariatur, ipsa aut iure dolores modi dicta.
+            </p>
+            <br>
+            <h1>LOREM PRINCIPAL</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium temporibus reiciendis ipsum nihil doloribus. Quasi aspernatur itaque ullam inventore placeat repellat harum reprehenderit, hic voluptas impedit. Impedit error nulla labore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat accusamus labore aperiam, atque minus quod, fugit explicabo error distinctio nam eveniet dolores totam exercitationem facilis, tenetur ut eligendi quisquam quis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam impedit quo deserunt adipisci ea enim animi debitis repellendus, ipsa, nam accusantium laboriosam pariatur vitae. Illum ullam cupiditate ipsam nesciunt totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus explicabo eligendi tenetur, dolore, earum optio blanditiis incidunt quam ea odio repellat vitae, assumenda temporibus natus minima eaque est id?
+            <img src="https://maps4study.com.br/wp-content/uploads/2025/11/6.jpg" alt="" width="100%" height="auto">
+            </p>
+        </div>
+        <div class="Categorias">
+            <img src="https://maps4study.com.br/wp-content/uploads/2025/11/8.jpg" alt="" width="100%" height="auto">
+            <h2>Categorias:</h2>
+            <ul>
+                <li><a href="">Categoria 1</a></li>
+                <li><a href="">Categoria 2</a></li>
+                <li><a href="">Categoria 3</a></li>
+                <li><a href="">Categoria 4</a></li>
+                <li><a href="">Categoria 5</a></li>
+            </ul>
+        </div>
+
+
+    </main>
+    <footer class="container" id="footer">
+        <h1 class="Comentario" id="comentario">Comentários:</h1>
+        <textarea name="eoq" id="eoq" class="linhacomentario"></textarea>
+        <p class="footer" >&copy; 2024 Site de Grid Layout. Todos os direitos reservados.</p>
+
+    </footer>
+</body>
+</html>
