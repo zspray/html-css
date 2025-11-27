@@ -25,6 +25,10 @@
             margin: 0 15px;
             font-weight: bold;
         }
+        nav a:hover{
+            color: #009dff;
+            background-color: white;
+        }
         body{
             font-family: Arial, sans-serif;
             margin: 0;
@@ -39,9 +43,8 @@
         }
         .grid-container {
             display: grid;
-            grid-template: auto auto auto / repeat(3, auto);
-            place-items: auto auto;
-            place-content: auto auto;
+            grid-template-rows: repeat(3, 100px);
+            grid-template-columns: repeat(4, 1fr);
             gap: 15px;
             padding: 10px;
             border: 2px solid #ccc;
@@ -52,6 +55,42 @@
             padding: 20px;
             text-align: center;
             font-size: 1.5em;
+            border: 2px solid #333;
+        }
+        .caixa1{
+            grid-row-start: 1;
+            grid-row-end:2;
+            grid-column-start: 1;
+            grid-column-end:5;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1em;
+            border: 2px solid #333;
+        }
+        .caixa2{
+            grid-row-start: 2;
+            grid-row-end:4;
+            grid-column-start: 1;
+            grid-column-end:3;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1em;
+            border: 2px solid #333;
+        }
+        .caixa3{
+            grid-row-start: 2;
+            grid-row-end:4;
+            grid-column-start: 3;
+            grid-column-end:5;
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 1em;
             border: 2px solid #333;
         }
     </style>
@@ -69,18 +108,9 @@
         </header>
         <main>
             <section class="grid-container">
-                <div class="item">Item 1</div>
-                <div class="item">Item 2</div>
-                <div class="item">Item 3</div>
-                <div class="item">Item 4</div>
-                <div class="item">Item 5</div>
-                <div class="item">Item 6</div>
-                <div class="item">Item 7</div>
-                <div class="item">Item 8</div>
-                <div class="item">Item 9</div>
-                <div class="item">Item 10</div>
-                <div class="item">Item 11</div>
-                <div class="item">Item 12</div>
+                <div class="caixa1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus explicabo consequatur harum accusantium quam officia deserunt impedit dolor illo laborum labore, magnam odio dolorem rerum minus et nesciunt corrupti! Nulla.</div>
+                <div class="caixa2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias animi quidem adipisci vel delectus voluptatem id, repudiandae saepe blanditiis. Ducimus tempora tempore est autem laboriosam exercitationem accusantium, dicta officiis unde?</div>
+                <div class="caixa3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, doloribus culpa iusto fugit mollitia expedita molestias ut soluta alias voluptate eius rem earum tenetur? Dolorum officia ratione praesentium dicta repellat.</div>
             </section>
         </main>
     </div>
